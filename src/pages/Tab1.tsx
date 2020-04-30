@@ -24,7 +24,7 @@ const Tab1: React.FC = () => {
   const history = useHistory();
   const email = () => {
     if(user === null){
-      return 'guest';
+      return 'NPC';
     }else{
       return user.email;
     }
