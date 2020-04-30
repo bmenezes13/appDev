@@ -8,11 +8,10 @@ import {
   IonTabBar,
   IonTabButton,
   IonTabs,
-  IonSpinner,
-  IonButton
+  IonSpinner
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { images, ellipse, square, triangle } from 'ionicons/icons';
+import { images, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Login from './pages/Login';

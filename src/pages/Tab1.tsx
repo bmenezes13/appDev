@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonInput, IonAlert, IonText, IonCard, IonCardTitle, IonCardContent, IonItem, IonLabel } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonInput, IonText, IonCard, IonCardTitle, IonCardContent } from '@ionic/react';
 import './Tab1.css';
 import * as firebase from 'firebase';
 import { useFirebase, logoutUser, getChar } from '../hooks/useFirebase';
 import { useHistory } from 'react-router-dom'
 
 const Tab1: React.FC = () => {
-  const [articles, setArticles] = React.useState([]);
 
   const [charN, setCharN] = useState<string>('');
   const [charR, setCharR] = useState<string>('');

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonButton, IonInput, IonCard, IonCardTitle, IonText, IonLoading } from '@ionic/react';
-import ExploreContainer from '../components/ExploreContainer';
 import './Login.css';
 import { loginUser } from '../hooks/useFirebase';
 import { toast } from '../toast'
