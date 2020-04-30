@@ -3,7 +3,7 @@
   <access origin="*" />
   
   <feature name="FirebaseAuthentication">
-    <param name="android-package" value="by.chemerisuk.cordova.firebase.FirebaseAuthenticationPlugin"/>
+    <param name="ios-package" value="FirebaseAuthenticationPlugin"/>
     <param name="onload" value="false"/>
   </feature>
 
