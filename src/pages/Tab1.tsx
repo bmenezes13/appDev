@@ -38,15 +38,6 @@ const Tab1: React.FC = () => {
     const chars = await getChar();
     console.log(chars);
   }
-  const db = firebase.firestore();
- // const renderChars = async() => {
-   // let res = await db.collection('Characters').where('player','==',email()).get();
-    //let charsn = res.docs;
-    //return charsn;
-  //}
-  //React.useEffect(() => {renderChars().then(charsn => setArticles(charsn.docs);}, []);
-  //const res = db.collection('Characters').where('player','==',email()).get();
-  //const characters = res.map((char) => <IonItem><IonLabel>{char}</IonLabel></IonItem>);
   const character = char();
   
   return (
