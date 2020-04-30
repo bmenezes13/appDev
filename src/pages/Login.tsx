@@ -51,20 +51,20 @@ const Login: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color="tertiary">
           <IonTitle>Welcome to Player's Keep</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonLoading message="Please wait..." duration={2000} isOpen={busy}/>
       <IonContent>
-        <IonCard mode="md">
+        <IonCard color="secondary" mode="md">
           <IonCardTitle>Login Here</IonCardTitle>
           <IonInput value={email} placeholder='Email' type='email' onIonChange={e => setEmail(e.detail.value!)}></IonInput>
           <IonInput value={password} placeholder='Password' type='password' onIonChange={e => setPassword(e.detail.value!)}></IonInput>
           <IonButton onClick={() => login()}>Login!</IonButton>
         </IonCard>
         <IonText mode="md"> -OR-</IonText>
-        <IonCard mode="md">
+        <IonCard color="secondary" mode="md">
           <IonCardTitle>Create an Account</IonCardTitle>
           <IonInput value={nemail} placeholder='Email' type='email' onIonChange={e => setNEmail(e.detail.value!)}></IonInput>
           <IonInput value={npassword} placeholder='Password' type='password' onIonChange={e => setNPassword(e.detail.value!)}></IonInput>

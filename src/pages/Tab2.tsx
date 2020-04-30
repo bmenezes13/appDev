@@ -13,8 +13,8 @@ const Tab2: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
-          <IonTitle>BAM's Photo Gallery</IonTitle>
+        <IonToolbar color="tertiary">
+          <IonTitle>Photo Gallery</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent>

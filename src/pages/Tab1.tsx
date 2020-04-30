@@ -41,13 +41,13 @@ const Tab1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar>
+        <IonToolbar color="tertiary">
           <IonTitle>Logged in as {email()}</IonTitle>
           <IonText></IonText>
         </IonToolbar>
       </IonHeader>
       <IonContent>
-      <IonCard mode="md">
+      <IonCard color="secondary" mode="md">
           <IonCardTitle>Create a New Character!</IonCardTitle>
           <IonInput value={charN} placeholder='Character Name' type='text' onIonChange={e => setCharN(e.detail.value!)}></IonInput>
           <IonInput value={charR} placeholder='Race' type='text' onIonChange={e => setCharR(e.detail.value!)}></IonInput>

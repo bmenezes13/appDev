@@ -37,10 +37,9 @@ import './theme/variables.css';
 
 import * as firebase from 'firebase';
 import { environment } from './environment/environment';
-import { getCurrentUser, logoutUser } from './hooks/useFirebase';
+import { getCurrentUser } from './hooks/useFirebase';
 import { useDispatch } from 'react-redux';
 import { setUserState } from './redux/actions';
-import { useHistory } from 'react-router-dom'
 
 let notSigned:boolean = true;
 firebase.initializeApp(environment.firebaseConfig);
@@ -55,7 +54,7 @@ const RoutingSystem: React.FC = () => {
           <Route path="/login" component={Login} exact={true}/>
           <Route path="/" render={() => <Redirect to="/login" />} exact={true} />
         </IonRouterOutlet>
-        <IonTabBar slot="bottom">
+        <IonTabBar color="tertiary" slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
             <IonIcon icon={triangle} />
             <IonLabel>Characters</IonLabel>
