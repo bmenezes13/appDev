@@ -5,11 +5,12 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar,
          IonCol, IonImg, IonActionSheet } from '@ionic/react';
 import './Tab2.css';
 import { usePhotoGallery, Photo } from '../hooks/usePhotoGallery';
-
+import { toast } from '../toast'
 
 const Tab2: React.FC = () => {
   const { photos, takePhoto, deletePhoto } = usePhotoGallery();
   const [photoToDelete, setPhotoToDelete] = useState<Photo>();
+  toast('Not yet connected to database...');
   return (
     <IonPage>
       <IonHeader>

@@ -4,6 +4,7 @@ import './Tab1.css';
 import * as firebase from 'firebase';
 import { useFirebase, logoutUser, getChar } from '../hooks/useFirebase';
 import { useHistory } from 'react-router-dom'
+import { toast } from '../toast'
 
 const Tab1: React.FC = () => {
 
@@ -37,6 +38,7 @@ const Tab1: React.FC = () => {
     console.log(chars);
   }
   const character = char();
+  toast('View Character list in Inspect->Console');
   
   return (
     <IonPage>
@@ -61,7 +63,7 @@ const Tab1: React.FC = () => {
           <IonInput value={statW} placeholder='Wisdom' type='number' onIonChange={e => setStatW(parseInt(e.detail.value!))}></IonInput>
           <IonInput value={statCh} placeholder='Charisma' type='number' onIonChange={e => setStatCh(parseInt(e.detail.value!))}></IonInput>
 
-          <IonButton>Create!</IonButton>
+          <IonButton onClick={() => toast('Character creation not yet implemented...')}>Create!</IonButton>
         </IonCard>
       <IonButton onClick={logout}>Logout</IonButton>
       </IonContent>
