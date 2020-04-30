@@ -38,7 +38,6 @@ const Tab1: React.FC = () => {
     console.log(chars);
   }
   const character = char();
-  toast('View Character list in Inspect->Console');
   
   return (
     <IonPage>
